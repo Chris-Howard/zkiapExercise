@@ -1,5 +1,13 @@
 pragma circom 2.1.2;
 
+/**
+*Num2Bits
+*- Parameters: nBits
+*- Input signal(s): in
+*- Output signal(s): b[nBits]
+* The output signals should be an array of bits of length nBits equivalent to the binary representation of in. b[0] is the least significant bit.
+*/
+
 template Num2Bits (nBits) {
     signal input in;
     signal output b[nBits];
