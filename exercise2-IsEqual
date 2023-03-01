@@ -12,7 +12,7 @@
 
 pragma circom 2.1.2;
 
-template Example () {
+template IsEqual() {
     signal input in[2];
     signal output out;
     out<--(in[0]!=in[1])?0:1;
@@ -21,7 +21,7 @@ template Example () {
 
 }
 
-component main = Example();
+component main = IsEqual();
 
 /* INPUT = {
     "in": ["4","5"]
