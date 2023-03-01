@@ -1,3 +1,15 @@
+// https://hackmd.io/@gubsheep/S1Hz96Yqo#IsNegative
+/*
+IsNegative
+NOTE: Signals are residues modulo p (the Babyjubjub prime), and there is no natural notion of “negative” numbers mod p. However, it is pretty clear that that modular arithmetic works analogously to integer arithmetic when we treat p-1 as -1. So we define a convention: “Negative” is by convention considered to be any residue in (p/2, p-1], and nonnegative is anything in [0, p/2)
+
+Parameters: none
+Input signal(s): in
+Output signal(s): out
+Specification: If in is negative according to our convention, out should be 1. Otherwise, out should be 0. You are free to use the CompConstant circuit, which takes a constant parameter ct, outputs 1 if in (a binary array) is strictly greater than ct when interpreted as an integer, and 0 otherwise.
+
+*/
+
 pragma circom 2.1.2;
 
 include "circomlib/circuits/compconstant.circom";
